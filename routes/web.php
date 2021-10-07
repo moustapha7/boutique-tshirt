@@ -20,4 +20,6 @@ Route::get('/', function () {
 });
 
 Route::get('/','Shop\MainController@index');
-Route::get('/produit','Shop\MainController@detailProduit');
+Route::get('/produit/{id}','Shop\MainController@produit')->name('detailProduit');
+
+Route::get('/categorie','Shop\MainController@viewByCategory');

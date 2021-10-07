@@ -27,21 +27,7 @@
     @include('layouts.header')
 
 
-    <main>
-
-        <section class="py-5 text-center">
-            <div class="container">
-                <h1 class="jumbotron-heading">Commandez votre <br><span class="badge badge-light">nouveau</span>
-                    <br>T-Shirt <span class="badge badge-primary ">préféré </span>!</h1>
-                <p class="lead text-muted">Dénichez THE T-Shirt de votre série, films préféré(e).</p>
-
-            </div>
-        </section>
-
-        @yield('content')
-
-
-    </main>
+    @yield('content')
 
     <footer class="text-muted">
         <div class="container">
@@ -50,13 +36,16 @@
             </p>
             <p>Mon T-Shirt</p>
         </div>
-    
+
     </footer>
 
-    <script src="{{asset('js/jquery-3.2.1.slim.min.js')}}" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="{{ asset('js/jquery-3.2.1.slim.min.js') }}"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
+    </script>
 
-    <script src="{{asset('js/popper.min.js')}}"></script>
-    <script src="{{asset('js/bootstrap.min.js')}}"></script>
-    <script src="{{asset('js/holder.min.js')}}"></script>
-    </body>
-    </html>
+    <script src="{{ asset('js/popper.min.js') }}"></script>
+    <script src="{{ asset('js/bootstrap.min.js') }}"></script>
+    <script src="{{ asset('js/holder.min.js') }}"></script>
+</body>
+
+</html>
