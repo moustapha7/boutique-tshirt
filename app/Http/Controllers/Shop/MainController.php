@@ -33,10 +33,11 @@ class MainController extends Controller
       }
 
 
-      public function viewByCategory()
+      public function viewByCategory(Request $request)
       {
+        $produits= Produit::where('category_id',$request->id)->get();
 
-       // $categories = Category::where('is_online',1)->get(); 
-        return view('shop.categorie');
+       $category = Category::find($request->id); 
+        return view('shop.categorie',compact('produits','category'));
       }
 }

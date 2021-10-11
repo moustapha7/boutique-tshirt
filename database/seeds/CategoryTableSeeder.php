@@ -36,6 +36,26 @@ class CategoryTableSeeder extends Seeder
         $category5->is_online = 1;
         $category5->save();
 
+        $category5= new \App\Category();
+        $category5->nom ="Chaussures";
+        $category5->is_online = 1;
+        $category5->save();
+
+        $category5= new \App\Category();
+        $category5->nom ="Pantalon";
+        $category5->is_online = 1;
+        $category5->save();
+        
+        $category5= new \App\Category();
+        $category5->nom ="Robe";
+        $category5->is_online = 1;
+        $category5->save();
+
+        $category5= new \App\Category();
+        $category5->nom ="Veste";
+        $category5->is_online = 1;
+        $category5->save();
+
 
     }
 }

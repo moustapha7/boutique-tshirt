@@ -19,7 +19,7 @@ Route::get('/', function () {
     return view('home');
 });
 
-Route::get('/','Shop\MainController@index');
+Route::get('/','Shop\MainController@index')->name('homepage');
 Route::get('/produit/{id}','Shop\MainController@produit')->name('detailProduit');
 
-Route::get('/categorie','Shop\MainController@viewByCategory');
+Route::get('/categorie/{id}','Shop\MainController@viewByCategory')->name('voir_produit_par_cate');

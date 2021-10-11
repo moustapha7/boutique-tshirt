@@ -22,7 +22,7 @@
         </div>
         <div class="navbar navbar-dark bg-dark box-shadow">
             <div class="container d-flex justify-content-between">
-                <a href="#" class="navbar-brand d-flex align-items-center">
+                <a href="{{route('homepage')}}" class="navbar-brand d-flex align-items-center">
                     <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
                         stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
                         class="mr-2">
@@ -54,7 +54,7 @@
                 <ul class="navbar-nav">
                     @foreach($categories as $category)
                     <li class="nav-item">
-                        <a class="nav-link" href="#">{{$category->nom}}</a>
+                        <a class="nav-link" href="{{route('voir_produit_par_cate',['id'=>$category->id])}}">{{$category->nom}}</a>
                     </li>
                     @endforeach
                 </ul>
